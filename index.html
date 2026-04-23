@@ -9,6 +9,7 @@
 
 <body>
 
+<!-- NAVBAR -->
 <nav class="navbar">
   <div class="logo">JRCM</div>
   <ul>
@@ -19,31 +20,23 @@
   <button id="toggleDark">🌙</button>
 </nav>
 
+<!-- HERO -->
 <header class="hero">
   <h1>Bienvenido a mi Blog</h1>
   <p>Ideas, aprendizaje y estilo de vida.</p>
 </header>
 
+<!-- POSTS AUTOMÁTICOS -->
 <main class="container">
 
   <h2>Últimos Posts</h2>
 
-  <div class="grid">
-
-    <article class="card">
-      <img src="Martysupreme2.png" alt="post">
-      <div class="card-content">
-        <h3><a href="post1.html">Mi primer post!</a></h3>
-        <p class="meta">22 Abril 2026</p>
-        <p class="tags">#blog </p>
-        <p>Bloggeros del mundo...</p>
-      </div>
-    </article>
-
-  </div>
+  <!-- El JS llenará este grid -->
+  <div class="grid" id="postsContainer"></div>
 
 </main>
 
+<!-- FOOTER -->
 <footer>
   <p>© 2026 JRCM</p>
 </footer>
