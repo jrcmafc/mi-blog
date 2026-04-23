@@ -8,3 +8,14 @@
     "link": "post1.html"
   }
 ]
+
+[
+  {
+    "title": "Mi segundo post!",
+    "date": "2026-04-22",
+    "tags": "#blog",
+    "image": "Martysupreme2.png",
+    "excerpt": "una prueba...",
+    "link": "post1.html"
+  }
+]
