@@ -1,30 +1,68 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <title>Mi Blog</title>
-    <link rel="stylesheet" href="styles.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Mi Blog</title>
+<link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
 
-    <header>
-        <h1>Mi Blog Personal</h1>
-        <p>Mis ideas, proyectos y aprendizajes</p>
-    </header>
+<!-- NAVBAR -->
+<nav class="navbar">
+  <div class="logo">MiBlog</div>
+  <ul>
+    <li><a href="#">Inicio</a></li>
+    <li><a href="#">Posts</a></li>
+    <li><a href="#">Sobre mí</a></li>
+    <li><a href="#">Contacto</a></li>
+  </ul>
+  <button id="toggleDark">🌙</button>
+</nav>
 
-    <section>
-        <h2>Últimas publicaciones</h2>
+<!-- HERO / PORTADA -->
+<header class="hero">
+  <h1>Bienvenido a mi Blog</h1>
+  <p>Ideas, proyectos y aprendizaje en tecnología</p>
+</header>
 
-        <article>
-            <h3><a href="post1.html">Mi primer post del blog</a></h3>
-            <p>Un pequeño avance de lo que estoy escribiendo…</p>
-        </article>
+<!-- CONTENIDO -->
+<main class="container">
 
-    </section>
+  <h2>Últimos Posts</h2>
 
-    <footer>
-        <p>© 2026 Mi Blog — Todos los derechos reservados</p>
-    </footer>
+  <div class="grid">
+
+    <article class="card">
+      <img src="https://picsum.photos/400/200" alt="post">
+      <div class="card-content">
+        <h3><a href="post1.html">Mi primer post</a></h3>
+        <p class="meta">Por Jesús | 22 Abril 2026</p>
+        <p class="tags">#tecnología #blog</p>
+        <p>Este es un resumen breve del contenido del post...</p>
+      </div>
+    </article>
+
+    <article class="card">
+      <img src="https://picsum.photos/401/200" alt="post">
+      <div class="card-content">
+        <h3>Segundo post</h3>
+        <p class="meta">Por Jesús | 21 Abril 2026</p>
+        <p class="tags">#programación</p>
+        <p>Otro contenido interesante que estoy escribiendo...</p>
+      </div>
+    </article>
+
+  </div>
+
+</main>
+
+<footer>
+  <p>© 2026 Mi Blog</p>
+</footer>
+
+<script src="script.js"></script>
 
 </body>
 </html>
