@@ -1,20 +1,81 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <title>Mi primer post</title>
-    <link rel="stylesheet" href="styles.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Mi primer post</title>
+<link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
-    <header>
-        <h1>Mi Blog</h1>
-    </header>
 
-    <section>
-        <h2>Mi primer post del blog</h2>
-        <p>Este es mi primer post. Aquí puedo escribir sobre el tema que quiera…</p>
+<!-- NAVBAR -->
+<nav class="navbar">
+  <div class="logo">MiBlog</div>
+  <ul>
+    <li><a href="index.html">Inicio</a></li>
+    <li><a href="about.html">Sobre mí</a></li>
+    <li><a href="contact.html">Contacto</a></li>
+  </ul>
+  <button id="toggleDark">🌙</button>
+</nav>
 
-        <a href="index.html">← Regresar al inicio</a>
-    </section>
+<!-- CONTENIDO DEL POST -->
+<main class="post-container">
+
+  <!-- Imagen portada -->
+  <img src="images/post1.jpg" class="post-cover" alt="post">
+
+  <!-- Título -->
+  <h1 class="post-title">Cómo creé mi blog desde cero</h1>
+
+  <!-- Meta info -->
+  <p class="post-meta">
+    Por <strong>Jesús</strong> · 22 Abril 2026 · #tecnología #blog
+  </p>
+
+  <!-- Contenido -->
+  <div class="post-content">
+
+    <p>
+      En este artículo te voy a explicar cómo puedes crear tu propio blog
+      desde cero utilizando únicamente HTML, CSS y JavaScript.
+    </p>
+
+    <h2>¿Por qué hacer un blog?</h2>
+    <p>
+      Tener un blog es una excelente forma de compartir ideas, documentar
+      proyectos y construir un portafolio profesional.
+    </p>
+
+    <h2>Primeros pasos</h2>
+    <p>
+      Lo primero que necesitas es crear una estructura básica con HTML.
+      Después puedes mejorar el diseño con CSS y agregar funcionalidades
+      con JavaScript.
+    </p>
+
+    <blockquote>
+      “Aprender haciendo es la mejor forma de dominar cualquier habilidad.”
+    </blockquote>
+
+    <p>
+      Conforme avances, puedes ir agregando más páginas, estilos y mejoras
+      visuales para hacer tu blog más atractivo.
+    </p>
+
+  </div>
+
+  <!-- BOTÓN REGRESAR -->
+  <a href="index.html" class="back-btn">← Volver al inicio</a>
+
+</main>
+
+<footer>
+  <p>© 2026 Mi Blog</p>
+</footer>
+
+<script src="script.js"></script>
+
 </body>
 </html>
