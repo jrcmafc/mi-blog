@@ -1,3 +1,7 @@
+/* ============================= */
+/* VARIABLES (LIGHT / DARK MODE) */
+/* ============================= */
+
 :root {
   --bg: #388BCF;
   --text: #333;
@@ -10,14 +14,22 @@ body.dark {
   --card: #1e1e1e;
 }
 
+/* ============================= */
+/* ESTILOS GENERALES             */
+/* ============================= */
+
 body {
   margin: 0;
   font-family: 'Segoe UI', sans-serif;
   background: var(--bg);
   color: var(--text);
+  transition: background .3s, color .3s;
 }
 
-/* NAVBAR */
+/* ============================= */
+/* NAVBAR                        */
+/* ============================= */
+
 .navbar {
   display: flex;
   justify-content: space-between;
@@ -46,7 +58,10 @@ body {
   cursor: pointer;
 }
 
-/* HERO */
+/* ============================= */
+/* HERO PORTADA                  */
+/* ============================= */
+
 .hero {
   text-align: center;
   padding: 80px 20px;
@@ -54,21 +69,30 @@ body {
   color: white;
 }
 
-/* CONTENEDOR */
+/* ============================= */
+/* CONTENEDOR GENERAL            */
+/* ============================= */
+
 .container {
   max-width: 1100px;
   margin: 40px auto;
   padding: 20px;
 }
 
-/* GRID */
+/* ============================= */
+/* GRID DE POSTS                 */
+/* ============================= */
+
 .grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 25px;
 }
 
-/* TARJETAS */
+/* ============================= */
+/* TARJETAS DE POST              */
+/* ============================= */
+
 .card {
   background: var(--card);
   border-radius: 12px;
@@ -83,6 +107,8 @@ body {
 
 .card img {
   width: 100%;
+  height: 200px;
+  object-fit: cover;
 }
 
 .card-content {
@@ -99,8 +125,81 @@ body {
   color: #2575fc;
 }
 
-/* FOOTER */
+/* ============================= */
+/* FOOTER                        */
+/* ============================= */
+
 footer {
   text-align: center;
   padding: 20px;
+  color: white;
+}
+
+/* ============================= */
+/* ESTILOS PARA LOS POSTS        */
+/* (post1.html, post2.html...)   */
+/* ============================= */
+
+/* CONTENEDOR DEL POST */
+.post-container {
+  max-width: 800px;
+  margin: 40px auto;
+  padding: 20px;
+  background: var(--card);
+  border-radius: 12px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+/* IMAGEN PORTADA */
+.post-cover {
+  width: 100%;
+  height: 350px;
+  object-fit: cover;
+  border-radius: 12px;
+  margin-bottom: 20px;
+}
+
+/* TÍTULO DEL POST */
+.post-title {
+  font-size: 36px;
+  margin-bottom: 10px;
+}
+
+/* META INFO */
+.post-meta {
+  color: gray;
+  font-size: 14px;
+  margin-bottom: 30px;
+}
+
+/* CONTENIDO DEL POST */
+.post-content p {
+  line-height: 1.7;
+  margin-bottom: 20px;
+}
+
+.post-content h2 {
+  margin-top: 30px;
+}
+
+/* CITA */
+blockquote {
+  border-left: 4px solid #2575fc;
+  padding-left: 15px;
+  font-style: italic;
+  color: #555;
+}
+
+/* BOTÓN VOLVER */
+.back-btn {
+  display: inline-block;
+  margin-top: 30px;
+  text-decoration: none;
+  font-weight: bold;
+  color: #2575fc;
+  transition: .2s;
+}
+
+.back-btn:hover {
+  opacity: .7;
 }
